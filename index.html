@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HITUNG BERAT BADAN IDEAL</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>HITUNG BERAT BADAN IDEAL</h1>
+      <p>
+        Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk
+        tubuh yang menunjang penampilan, berat badan ideal juga menandakan
+        kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di
+        kalkulator IMT (indeks massa tubuh).
+      </p>
+
+      <div class="form-group">
+        <label>Nama Anda *</label>
+        <input type="text" id="nama" placeholder="nama" />
+      </div>
+
+      <div class="form-group">
+        <label>Tinggi Badan Anda * (Cm)</label>
+        <input type="number" id="tinggi" placeholder="" />
+      </div>
+
+      <div class="form-group">
+        <label>Berat Badan Anda * (Kg)</label>
+        <input type="number" id="berat" placeholder="" />
+      </div>
+
+      <div class="btn-group">
+        <button class="btn-hitung" onclick="hitungData()">HITUNG</button>
+        <button class="btn-reset" onclick="resetForm()">RESET</button>
+      </div>
+
+      <div class="hasil">
+        <p>Berat Badan Ideal Anda: <span id="bbi">67.50</span> (Kg)</p>
+        <p>Skor Hasil Indeks Massa Tubuh Anda: <span id="imt">22.86</span></p>
+        <p>
+          Status Gizi Anda:
+          <span id="status_gizi" class="status-normal">Normal</span>
+        </p>
+        <p>Berat Badan (Minimal): <span id="min_bb">56.66</span></p>
+        <p>Berat Badan (Maksimal): <span id="max_bb">76.56</span></p>
+        <p>Kebutuhan Air Harian: <span id="kebutuhan_air">2.0</span> Liter</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
