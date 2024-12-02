@@ -3,9 +3,11 @@ function hitungData() {
   const nama = document.getElementById("nama").value;
   const tinggi = parseFloat(document.getElementById("tinggi").value);
   const berat = parseFloat(document.getElementById("berat").value);
+  const usia = parseInt(document.getElementById("usia").value);
+  const jenisKelamin = document.getElementById("jenis_kelamin").value;
 
   // Validasi input
-  if (!nama || !tinggi || !berat) {
+  if (!nama || !tinggi || !berat || !usia || !jenisKelamin) {
     alert("Mohon isi semua data yang diperlukan!");
     return;
   }
